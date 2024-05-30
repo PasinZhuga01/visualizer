@@ -1,0 +1,91 @@
+.header-footer{
+    position: absolute;
+    display: flex;
+    left: 0;
+    width: 99.5%;
+    height: 8%;
+    padding: 0 0.25%;
+    align-items: center;
+    color: var(--second-main-color);
+    background-color: var(--first-main-color);
+}
+
+.graphic-button *{
+    fill: var(--second-main-color);
+    stroke: var(--second-main-color);
+    transition: var(--transition);
+}
+
+.graphic-button:hover *{
+    fill: var(--first-main-color);
+    stroke: var(--first-main-color);
+    filter: brightness(120%);
+}
+
+.standard-input{
+    font-size: 2vh;
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-color: var(--second-main-color);
+    color: var(--second-main-color);
+    background: none;
+    padding: 0.32vh 0.32vw;
+    text-align: center;
+}
+
+.standard-input:focus{
+    outline: none;
+}
+
+.standard-input::placeholder{
+    opacity: 0.5;
+    color: var(--second-main-color);
+}
+
+.standard-checkbox{
+    display: flex;
+    height: 2vh;
+    font-size: 2vh;
+    align-items: center;
+}
+
+.standard-checkbox-input{
+    width: 0.75vw;
+    height: 75%;
+    border-radius: 3px;
+    border: 1px solid var(--fourth-main-color);
+    background-color: red;
+    transition: var(--transition);
+}
+
+.standard-checkbox.checked .standard-checkbox-input{
+    background-color: limegreen;
+}
+
+.standard-checkbox-value{
+    width: auto;
+    color: var(--second-main-color);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.standard-button{
+    color: var(--fourth-main-color);
+    border: 1px solid var(--fourth-main-color);
+    background-color: var(--third-main-color);
+    transition: var(--transition);
+}
+
+.standard-button:hover:not(.disabled):not(.executed),
+.standard-button.executed,
+.standard-checkbox-input:hover:not(.disabled):not(.executed){
+    color: var(--first-main-color);
+    border-color: var(--first-main-color);
+    filter: brightness(120%);
+}
+
+.standard-button.disabled, .standard-input.disabled, .standard-input.disabled::placeholder{
+    color: red;
+    border-color: red;
+}

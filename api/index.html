@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="assets/favicon.ico" type="image/icon">
+        <link rel="stylesheet" href="css/root.css">
+        <link rel="stylesheet" href="css/standard.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/navigation.css">
+        <link rel="stylesheet" href="css/visualizer.css">
+        <link rel="stylesheet" href="css/instructions.css">
+        <link rel="stylesheet" href="css/storage.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/overlays.css">
+        <title>StructVisor</title>
+    </head>
+    <body>
+        <header class="header-footer">
+            <svg id="nav-toggle" class="graphic-button" data-svg-name="nav-toggle" data-svg-view="80 80"></svg>
+            <h1>StructVisor</h1>
+        </header>
+
+        <div id="visualizer-section">
+            <div id="asd-control-section"></div>
+            <canvas id="visualizer-canvas"></canvas>
+        </div>
+
+        <nav>
+            <input id="nav-search" class="standard-input" type="search" placeholder="Пошук">
+            <ul id="asd-list"></ul>
+        </nav>
+
+        <footer class="header-footer">
+            <div class="control-box without-borders">
+                <div class="control-items">
+                    <svg id="animation-step-back" class="graphic-button" data-svg-name="step-back" data-svg-view="80 64"></svg>
+                    <svg id="animation-step-forward" class="graphic-button" data-svg-name="step-forward" data-svg-view="80 64"></svg>
+                    <svg id="animation-pause" class="graphic-button" data-svg-name="pause" data-svg-view="40 54"></svg>
+                    <svg id="animation-play" class="graphic-button" data-svg-name="play" data-svg-view="40 54"></svg>
+                    <svg id="animation-skip" class="graphic-button" data-svg-name="skip" data-svg-view="80 60"></svg>
+                </div>
+            </div>
+            <div id="animation-control-box" class="control-box">
+                <h2>Швидкість анімації</h2>
+                <div class="control-items">
+                    <div id="animation-speed-range" data-is-animation-speed-range></div>
+                </div>
+            </div>
+            <div class="control-box without-borders aligned-right">
+                <div class="control-items">
+                    <svg id="instructions-open" class="graphic-button" data-svg-name="instructions-open"></svg>
+                    <svg id="theme-toggle" class="graphic-button" data-svg-name="theme-toggle"></svg>
+                    <svg id="clear-storage-open" class="graphic-button" data-svg-name="clear-storage-open"></svg>
+                </div>
+            </div>
+        </footer>
+
+        <div id="instructions-section">
+            <div id="instructions-tabs">
+                <div class="instructions-tab" id="instructions-tab-structure">Структура даних</div>
+                <div class="instructions-tab" id="instructions-tab-algorithm">Алгоритм</div>
+            </div>
+            <iframe id="instructions-frame"></iframe>
+            <div id="instructions-close">X</div>
+        </div>
+
+        <div id="clear-storage-section">
+            <div id="clear-storage-header">
+                <h1>Очистити збережені дані</h1>
+                <div id="clear-storage-close">X</div>
+            </div>
+            <div id="clear-storage-buttons">
+                <input id="clear-storage-button" type="button" value="Очистити усі збережені дані">
+                <input id="clear-storage-progress-button" type="button" value="Очистити прогрес усіх АСД">
+                <input id="clear-storage-structure-progress-button" type="button" value="Очистити прогрес поточної АСД">
+            </div>
+        </div>
+
+        <div id="rotate-device-overlay">Будь ласка, поверніть свій пристрій у альбомний режим для кращої взаємодії</div>
+        <div id="dark-overlay"></div>
+
+        <script type="text/javascript" src="../dist/api.js"></script>
+        <script type="text/javascript" src="../dist/app.js"></script>
+    </body>
+</html>

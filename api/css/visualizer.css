@@ -1,0 +1,59 @@
+#visualizer-section{
+    position: absolute;
+    left: 0;
+    top: 8%;
+    width: 100%;
+    height: 84%;
+}
+
+#asd-control-section{
+    position: absolute;
+    display: flex;
+    left: 0;
+    top: 0;
+    width: 99.5%;
+    height: 9%;
+    padding: 0 0.25%;
+    overflow-x: auto;
+    align-items: center;
+    background-color: var(--fifth-main-color);
+}
+
+#asd-control-section .control-box{
+    display: flex;
+    height: 100%;
+    padding: 0 0.5vw;
+    flex-direction: column;
+    border-right: 1px solid var(--second-main-color); 
+}
+
+#asd-control-section .control-box h2{
+    height: 30%;
+    padding: 0;
+    margin: 0;
+    font-size: 2vh;
+    font-weight: normal;
+    text-align: center;
+    color: var(--second-main-color);
+}
+
+#asd-control-section .control-box .control-items{
+    display: flex;
+    height: 70%;
+    align-items: center;
+    justify-content: center;
+}
+
+#asd-control-section .control-box .control-items > *{
+    font-size: 1.72vh;
+    margin: 0 0.05vw;
+}
+
+#visualizer-canvas{
+    position: absolute;
+    left: 0;
+    top: 9%;
+    width: 100%;
+    height: 91%;
+    background-color: var(--canvas-color);
+}

@@ -1,0 +1,59 @@
+#instructions-section{
+    position: fixed;
+    display: none;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+
+#instructions-tabs{
+    position: absolute;
+    display: flex;
+    left: 0;
+    top: 0;
+    width: 80%;
+    height: 6%;
+    color: white;
+    font-size: 2.8vh;
+}
+
+.instructions-tab{
+    display: flex;
+    height: 100%;
+    padding: 0 2vw;
+    align-items: center;
+    transition: var(--transition);
+}
+
+.instructions-tab:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#instructions-frame{
+    position: absolute;
+    left: 0;
+    top: 6%;
+    width: 100%;
+    height: 94%;
+    border: none;
+}
+
+#instructions-close{
+    position: absolute;
+    right: 0.5%;
+    top: 0.5%;
+    width: 2%;
+    height: 2%;
+    font-size: 4vh;
+    font-weight: bold;
+    color: white;
+    transition: var(--transition);
+}
+
+#instructions-close:hover{
+    cursor: pointer;
+    color: var(--first-main-color);
+}

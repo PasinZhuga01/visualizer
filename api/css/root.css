@@ -1,0 +1,13 @@
+:root{
+    --first-main-color: #0664e3;
+    --second-main-color: #ffffff;
+    --third-main-color: #f0f0f0;
+    --fourth-main-color: #000000;
+    --fifth-main-color: #8eb7e3;
+    --canvas-color: #ffffff;
+    --transition: ease 0.125s;
+}
+
+:root *{
+    font-family: 'Calibri';
+}

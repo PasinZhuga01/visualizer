@@ -1,0 +1,36 @@
+nav{
+    position: absolute;
+    left: 0;
+    top: 8%;
+    width: 0;
+    height: 84%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden scroll;
+    border-right: 1px solid var(--fourth-main-color);
+    background-color: var(--third-main-color);
+    transition: width 0.76s;
+}
+
+#nav-search{
+    width: 96%;
+    margin-top: 1vh;
+    text-align: left;
+    color: var(--fourth-main-color);
+    border-color: var(--fourth-main-color);
+}
+
+#nav-search::placeholder{
+    color: var(--fourth-main-color);
+}
+
+#asd-list{
+    text-align: left;
+    font-size: 1.85vh;
+    color: var(--fourth-main-color);
+}
+
+.asd-title:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
